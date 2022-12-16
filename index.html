@@ -419,35 +419,39 @@
                     <!-- ===== Contact Form ===== -->
                     <div class="row">
                         <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nome">
+                            <form action="https://api.staticforms.xyz/submit" method="post">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="name"  class="form-control" placeholder="Nome">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="Email">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <input type="subject" name="subject" class="form-control" placeholder="Assunto">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <input type="text" class="form-control" placeholder="Assunto">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Mensagem"></textarea>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Mensagem"></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn"> Enviar Mensagem</button>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" value="Submit" class="btn"> Enviar Mensagem</button>
+                                    </div>
                                 </div>
-                            </div>
+                                <input type="hidden" name="accessKey" value="2c2ad4c4-347b-4cfb-8ed7-676105ff3670">
+                                <input type="hidden" name="redirectTo" value="https://nekoportfolio.vercel.app">
+                            </form>
                         </div>
                     </div>
                 </div>
