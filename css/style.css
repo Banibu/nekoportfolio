@@ -254,7 +254,7 @@ ul
 }
 .aside .nav li a.active
 {
-    color:var(--skin-color)
+    color:var(--bg-black-50)
 }
 .aside .nav li a i
 {
